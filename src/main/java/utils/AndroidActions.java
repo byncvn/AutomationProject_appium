@@ -5,10 +5,11 @@ import org.openqa.selenium.WebElement;
 
 public class AndroidActions extends AppiumUtils {
 
-    AndroidDriver androidDriver;
+    AndroidDriver driver;
 
-    public AndroidActions(AndroidDriver androidDriver) {
-        this.androidDriver = androidDriver;
+    public AndroidActions(AndroidDriver driver) {
+        super(driver);
+        this.driver = driver;
     }
 
     public void tapElement(WebElement webElement) {
@@ -19,7 +20,7 @@ public class AndroidActions extends AppiumUtils {
 
     public void sendKeysTo(WebElement webElement, String inputs) {
         webElement.sendKeys(inputs);
-        androidDriver.hideKeyboard();
+        driver.hideKeyboard();
         //TODO: Add log to inform element has been tapped
         System.out.println("input " + inputs + " has been sent");
     }
