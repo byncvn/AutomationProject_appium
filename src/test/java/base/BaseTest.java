@@ -15,13 +15,12 @@ import java.net.URL;
 import java.time.Duration;
 
 public class BaseTest {
-    public BaseTest() throws URISyntaxException, MalformedURLException {
+    public BaseTest() {
     }
 
     public AndroidDriver androidDriver;
     public AppiumDriverLocalService appiumService;
     public UiAutomator2Options capabilities;
-    public URL url = new URI("http://127.0.0.1:4723/").toURL();
     public String pathMainJS = "C:\\Users\\ggeta\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
 
     public String deviceName = "SM-G975U";
@@ -30,7 +29,7 @@ public class BaseTest {
     public String appPath = "C:\\Users\\ggeta\\IdeaProjects\\AutomationProject_appium\\src\\test\\java\\resources\\androidApp\\SampleApp.apk";
 
     @BeforeClass
-    public void setUp() throws MalformedURLException {
+    public void setUp() throws MalformedURLException, URISyntaxException {
         configureAppiumService();
         configureAndroidDriver();
         setUptimeOutDuration(5);
@@ -52,7 +51,9 @@ public class BaseTest {
         appiumService.start();
     }
     
-    private void configureAndroidDriver() throws MalformedURLException {
+    private void configureAndroidDriver() throws URISyntaxException, MalformedURLException {
+        URL url = new URI("http://127.0.0.1:4723/").toURL();
+
         capabilities = new UiAutomator2Options();
         capabilities.setDeviceName(deviceName);
         capabilities.setApp(appPath);
