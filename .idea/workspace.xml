@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9ec4b089-539a-408f-9715-dc58c756e827" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AllItemsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AllItemsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/WebViewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/WebViewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" afterDir="false" />
     </list>

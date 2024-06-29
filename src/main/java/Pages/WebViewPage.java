@@ -12,7 +12,7 @@ public class WebViewPage extends AndroidActions {
     public WebViewPage(AndroidDriver androidDriver) {
         super(androidDriver);
         this.androidDriver = androidDriver;
-        PageFactory.initElements(new AppiumFieldDecorator(androidDriver),this);
+        PageFactory.initElements(new AppiumFieldDecorator(androidDriver), this);
     }
 
 }
