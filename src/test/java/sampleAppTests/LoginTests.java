@@ -1,5 +1,6 @@
 package sampleAppTests;
 
+import Pages.AllItemsPage;
 import Pages.LoginPage;
 import base.BaseTest;
 import org.testng.Assert;
@@ -8,17 +9,24 @@ import org.testng.annotations.Test;
 
 public class LoginTests extends BaseTest {
 
-    public LoginPage loginPage;
-
-    @BeforeMethod
-    public void createPages() {
-        loginPage = new LoginPage(androidDriver);
-    }
-
     @Test(description = "Log in happy-path")
     public void validLogin() {
         loginPage.tapLoginButton();
         Assert.assertTrue(true, "String message");
     }
 
+    @Test(description = "input username")
+    public void testUsernameField() {
+        loginPage.inputUsername("");
+        Assert.assertTrue(true, "String message");
+
+    }
+
+    @Test(description = "test description")
+    public void testName() {
+        AllItemsPage allItemsPage = loginPage.login();
+        allItemsPage.addItemToCartByIndex(1);
+        Assert.assertTrue(true, "String message");
+
+    }
 }
