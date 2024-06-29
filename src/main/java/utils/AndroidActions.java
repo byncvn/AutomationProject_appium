@@ -3,7 +3,7 @@ package utils;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 
-public class AndroidActions {
+public class AndroidActions extends AppiumUtils {
 
     AndroidDriver androidDriver;
 
