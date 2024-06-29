@@ -11,18 +11,20 @@ import java.net.URISyntaxException;
 
 public class LoginTests extends BaseTest {
 
+
     public LoginTests() throws URISyntaxException, MalformedURLException {
     }
 
     public LoginPage loginPage;
 
     @BeforeMethod
-    public void methodName() {
-        loginPage = new LoginPage();
+    public void createPages() {
+        loginPage = new LoginPage(androidDriver);
     }
 
     @Test(description = "Log in happy-path")
     public void validLogin() {
+        loginPage.clickUsernameField();
         Assert.assertTrue(true, "String message");
     }
 }
