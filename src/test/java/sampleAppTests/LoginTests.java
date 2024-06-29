@@ -11,10 +11,6 @@ import java.net.URISyntaxException;
 
 public class LoginTests extends BaseTest {
 
-
-    public LoginTests() throws URISyntaxException, MalformedURLException {
-    }
-
     public LoginPage loginPage;
 
     @BeforeMethod
@@ -27,4 +23,5 @@ public class LoginTests extends BaseTest {
         loginPage.clickUsernameField();
         Assert.assertTrue(true, "String message");
     }
+
 }
