@@ -6,9 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-
 public class LoginTests extends BaseTest {
 
     public LoginPage loginPage;
