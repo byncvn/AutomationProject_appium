@@ -38,8 +38,9 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-        appiumService.stop();
         androidDriver.quit();
+        appiumService.stop();
+         System.out.println("finish");
     }
 
     private void configureAppiumService() {
