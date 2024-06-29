@@ -15,8 +15,6 @@ import java.net.URL;
 import java.time.Duration;
 
 public class BaseTest {
-    public BaseTest() {
-    }
 
     public AndroidDriver androidDriver;
     public AppiumDriverLocalService appiumService;

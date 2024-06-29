@@ -56,23 +56,23 @@ public class LoginPage extends AndroidActions {
 
     //-------------------------- Methods ---------------------------------------------
 
-    public void clickUsernameField() {
+    public void tapLoginButton() {
         tapElement(loginButton);
     }
 
-    public void clickBiometryButton() {
+    public void tapBiometryButton() {
         tapElement(biometryButton);
     }
 
-    public void clickStandardUserText() {
+    public void tapStandardUserText() {
         tapElement(standardUserText);
     }
 
-    public void clickLockedOutUserText() {
+    public void tapLockedOutUserText() {
         tapElement(lockedOutUserText);
     }
 
-    public void clickProblemUserText() {
+    public void tapProblemUserText() {
         tapElement(problemUserText);
     }
 

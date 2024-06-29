@@ -14,13 +14,14 @@ public class AndroidActions {
     public void tapElement(WebElement webElement) {
         webElement.click();
         //TODO: Add log to inform element has been tapped
-        System.out.println("element has been tapped");
+        System.out.println("element" + webElement + " has been tapped");
     }
 
     public void sendKeysTo(WebElement webElement, String inputs) {
         webElement.sendKeys(inputs);
+        androidDriver.hideKeyboard();
         //TODO: Add log to inform element has been tapped
-        System.out.println("element has been tapped");
+        System.out.println("input " + inputs + " has been sent");
     }
 
     public void scrollDown() {

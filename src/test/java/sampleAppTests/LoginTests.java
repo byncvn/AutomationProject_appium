@@ -17,7 +17,7 @@ public class LoginTests extends BaseTest {
 
     @Test(description = "Log in happy-path")
     public void validLogin() {
-        loginPage.clickUsernameField();
+        loginPage.tapLoginButton();
         Assert.assertTrue(true, "String message");
     }
 

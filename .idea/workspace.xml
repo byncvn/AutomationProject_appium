@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec4b089-539a-408f-9715-dc58c756e827" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_28_2024_3_37_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_28_2024_3_37_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AboutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AllItemsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AllItemsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/DrawingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/DrawingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GeoLocationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GeoLocationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/QrPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/QrPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ShoppingKartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ShoppingKartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/WebViewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/WebViewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" afterDir="false" />
     </list>
@@ -34,15 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.LoginTests.validLogin.executor": "Run",
-    "git-widget-placeholder": "pagesAndTestsClasses",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/ggeta/IdeaProjects/AutomationProject_appium/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.LoginTests.validLogin.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;pagesAndTestsClasses&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ggeta/IdeaProjects/AutomationProject_appium/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="LoginTests.validLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_appium" />
