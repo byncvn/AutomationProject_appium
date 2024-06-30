@@ -1,6 +1,9 @@
 package utils;
 
+import com.google.common.collect.ImmutableMap;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class AndroidActions extends AppiumUtils {
@@ -11,6 +14,10 @@ public class AndroidActions extends AppiumUtils {
     public AndroidActions(AndroidDriver driver) {
         super(driver);
         this.androidDriver = driver;
+    }
+
+    public void setActivity(String pack, AndroidDriver driver){
+        ((JavascriptExecutor)driver).executeScript("mobile: startActivity", ImmutableMap.of("intent", pack));
     }
 
     public void tapElement(WebElement webElement) {
