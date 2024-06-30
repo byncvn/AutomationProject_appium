@@ -5,8 +5,11 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import sampleAppTests.LoginTests;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -16,6 +19,8 @@ import java.net.URL;
 import java.time.Duration;
 
 public class BaseTest {
+
+    public Logger log = LoggerFactory.getLogger(LoginTests.class);
 
     public AndroidDriver androidDriver;
     public AppiumDriverLocalService appiumService;

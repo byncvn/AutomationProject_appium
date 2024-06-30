@@ -2,8 +2,11 @@ package utils;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class AndroidActions extends AppiumUtils {
+
 
     AndroidDriver androidDriver;
 
@@ -13,15 +16,13 @@ public class AndroidActions extends AppiumUtils {
 
     public void tapElement(WebElement webElement) {
         webElement.click();
-        //TODO: Add log to inform element has been tapped
-        System.out.println("element" + webElement + " has been tapped");
+        log.info("element {} has been tapped", webElement);
     }
 
     public void sendKeysTo(WebElement webElement, String inputs) {
         webElement.sendKeys(inputs);
         androidDriver.hideKeyboard();
-        //TODO: Add log to inform element has been tapped
-        System.out.println("input " + inputs + " has been sent");
+        log.info("input [{}] has been sent", inputs);
     }
 
     public void scrollDown() {
