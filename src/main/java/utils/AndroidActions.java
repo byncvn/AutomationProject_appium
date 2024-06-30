@@ -2,16 +2,15 @@ package utils;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AndroidActions extends AppiumUtils {
 
 
     AndroidDriver androidDriver;
 
-    public AndroidActions(AndroidDriver androidDriver) {
-        this.androidDriver = androidDriver;
+    public AndroidActions(AndroidDriver driver) {
+        super(driver);
+        this.androidDriver = driver;
     }
 
     public void tapElement(WebElement webElement) {
