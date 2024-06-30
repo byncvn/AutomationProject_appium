@@ -1,27 +1,25 @@
 package sampleAppTests;
 
 import base.BaseTest;
-import com.google.common.collect.ImmutableMap;
-import io.appium.java_client.android.Activity;
-import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import utils.AndroidActions;
 
-import java.sql.DriverManager;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 public class LoginTests extends BaseTest {
 
 
     @Test(description = "Log in happy-path",
             dataProvider = "credentials")
-    public void validLogin(String user, String Password) {
-        loginPage.inputUsername(user);
-        loginPage.inputPassword(Password);
+    public void validLogin(HashMap<String, String> input) {
+        log.info(input.get("username"));
+        log.info(input.get("password"));
+        loginPage.inputUsername(input.get("username"));
+        loginPage.inputPassword(input.get("password"));
         loginPage.tapLoginButton();
         //TODO: COMPLETE ASSERTIONS
         Assert.assertTrue(true, "String message");
@@ -29,9 +27,9 @@ public class LoginTests extends BaseTest {
 
     @Test(description = "invalidLogin",
             dataProvider = "credentials")
-    public void invalidLogin(String user, String Password) {
-        loginPage.inputUsername(user);
-        loginPage.inputPassword(Password);
+    public void invalidLogin(HashMap<String, String> input) {
+        loginPage.inputUsername(input.get("username"));
+        loginPage.inputPassword(input.get("password"));
         loginPage.tapLoginButton();
         //TODO: COMPLETE ASSERTIONS
         Assert.assertTrue(true, "String message");
@@ -44,9 +42,8 @@ public class LoginTests extends BaseTest {
     }
 
     @DataProvider(name = "credentials")
-    public Object[][] credentials() {
-        return new Object[][]{
-                {"standard_user", "secret_sauce"}, {"standard_user", "secret_sauce"}
-        };
+    public Object[][] credentials() throws IOException {
+        List<HashMap<String, String>> data = loginPage.getJsonData(System.getProperty("user.dir") + "\\src\\test\\java\\testData\\sampleApp.json");
+        return new Object[][]{{data.get(0)}, {data.get(1)}};
     }
 }
