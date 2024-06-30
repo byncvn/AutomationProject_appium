@@ -90,4 +90,8 @@ public class LoginPage extends AndroidActions {
         return new AllItemsPage(androidDriver);
     }
 
+    public void setLoginPage() {
+        Menu menu = new Menu(androidDriver);
+        menu.navigateToLogOut();
+    }
 }
