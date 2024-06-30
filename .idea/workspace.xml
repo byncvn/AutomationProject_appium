@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec4b089-539a-408f-9715-dc58c756e827" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testData/sampleApp.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AppiumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AppiumUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,8 +125,8 @@
       <list>
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.LoginTests.invalidLogin" />
-        <item itemvalue="TestNG.LoginTests.validLogin2" />
         <item itemvalue="TestNG.LoginTests.validLogin" />
+        <item itemvalue="TestNG.LoginTests.validLogin2" />
       </list>
     </recent_temporary>
   </component>
@@ -151,8 +151,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="12" />
+          <line>20</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
