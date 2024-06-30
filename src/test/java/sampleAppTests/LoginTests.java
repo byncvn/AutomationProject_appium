@@ -1,10 +1,18 @@
 package sampleAppTests;
 
-import Pages.AllItemsPage;
 import base.BaseTest;
+import com.google.common.collect.ImmutableMap;
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import utils.AndroidActions;
+
+import java.sql.DriverManager;
 
 public class LoginTests extends BaseTest {
 
@@ -15,28 +23,30 @@ public class LoginTests extends BaseTest {
         loginPage.inputUsername(user);
         loginPage.inputPassword(Password);
         loginPage.tapLoginButton();
+        //TODO: COMPLETE ASSERTIONS
         Assert.assertTrue(true, "String message");
     }
 
     @Test(description = "invalidLogin",
-            dataProvider = "getCredentials")
-    public void invalidLogin() {
-        loginPage.inputUsername("");
-        log.info("this is a log test");
+            dataProvider = "credentials")
+    public void invalidLogin(String user, String Password) {
+        loginPage.inputUsername(user);
+        loginPage.inputPassword(Password);
+        loginPage.tapLoginButton();
+        //TODO: COMPLETE ASSERTIONS
         Assert.assertTrue(true, "String message");
 
     }
 
-    @Test(description = "test description")
-    public void testName() {
-        AllItemsPage allItemsPage = loginPage.login();
-        allItemsPage.addItemToCartByIndex(1);
-        Assert.assertTrue(true, "String message");
-
+    @AfterMethod
+    public void setActivity() {
+        loginPage.setLoginPage();
     }
 
     @DataProvider(name = "credentials")
-    public Object[][] getCredentials() {
-        return new Object[][]{{"standard_user", "secret_sauce"}};
+    public Object[][] credentials() {
+        return new Object[][]{
+                {"standard_user", "secret_sauce"}, {"standard_user", "secret_sauce"}
+        };
     }
 }
