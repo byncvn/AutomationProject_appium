@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ec4b089-539a-408f-9715-dc58c756e827" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AndroidActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/AppiumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/AppiumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/iOSActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/iOSActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sampleAppTests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginTests">
+  <component name="RunManager" selected="TestNG.LoginTests.validLogin">
     <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_appium" />
       <extension name="coverage">
@@ -57,7 +55,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.testUsernameField" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.invalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject_appium" />
       <extension name="coverage">
         <pattern>
@@ -67,7 +65,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="sampleAppTests" />
       <option name="MAIN_CLASS_NAME" value="sampleAppTests.LoginTests" />
-      <option name="METHOD_NAME" value="testUsernameField" />
+      <option name="METHOD_NAME" value="invalidLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -95,9 +93,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="TestNG.LoginTests.validLogin" />
-        <item itemvalue="TestNG.LoginTests.testUsernameField" />
+        <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.LoginTests.invalidLogin" />
       </list>
     </recent_temporary>
   </component>

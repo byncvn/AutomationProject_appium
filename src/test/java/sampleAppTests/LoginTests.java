@@ -1,26 +1,26 @@
 package sampleAppTests;
 
 import Pages.AllItemsPage;
-import Pages.LoginPage;
 import base.BaseTest;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseTest {
 
-    @Test(description = "Log in happy-path")
-    public void validLogin() {
-        loginPage.inputUsername("standard_user");
-        loginPage.inputPassword("secret_sauce");
+
+    @Test(description = "Log in happy-path",
+            dataProvider = "credentials")
+    public void validLogin(String user, String Password) {
+        loginPage.inputUsername(user);
+        loginPage.inputPassword(Password);
         loginPage.tapLoginButton();
         Assert.assertTrue(true, "String message");
     }
 
-    @Test(description = "input username")
-    public void testUsernameField() {
+    @Test(description = "invalidLogin",
+            dataProvider = "getCredentials")
+    public void invalidLogin() {
         loginPage.inputUsername("");
         log.info("this is a log test");
         Assert.assertTrue(true, "String message");
@@ -33,5 +33,10 @@ public class LoginTests extends BaseTest {
         allItemsPage.addItemToCartByIndex(1);
         Assert.assertTrue(true, "String message");
 
+    }
+
+    @DataProvider(name = "credentials")
+    public Object[][] getCredentials() {
+        return new Object[][]{{"standard_user", "secret_sauce"}};
     }
 }
