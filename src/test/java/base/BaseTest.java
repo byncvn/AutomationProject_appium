@@ -46,7 +46,7 @@ public class BaseTest {
     public void tearDown() {
         androidDriver.quit();
         appiumService.stop();
-         System.out.println("finish");
+        System.out.println("finish");
     }
 
     private void configureAppiumService() {
@@ -57,7 +57,7 @@ public class BaseTest {
                 .build();
         appiumService.start();
     }
-    
+
     private void configureAndroidDriver() throws URISyntaxException, MalformedURLException {
         URL url = new URI("http://127.0.0.1:4723/").toURL();
 
@@ -67,10 +67,10 @@ public class BaseTest {
         capabilities.setAppActivity(appActivity);
         capabilities.setAppPackage(appPackage);
 
-        androidDriver = new AndroidDriver(url,capabilities);
+        androidDriver = new AndroidDriver(url, capabilities);
     }
 
-    public void setUptimeOutDuration(int timeInSeconds){
+    public void setUptimeOutDuration(int timeInSeconds) {
         androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeInSeconds));
     }
 

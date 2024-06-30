@@ -34,7 +34,7 @@ public class AndroidActions extends AppiumUtils {
 
     }
 
-    public void scrollToText(){
+    public void scrollToText() {
 
     }
 

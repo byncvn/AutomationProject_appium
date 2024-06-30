@@ -84,7 +84,7 @@ public class LoginPage extends AndroidActions {
         sendKeysTo(passwordField, input);
     }
 
-    public AllItemsPage login(){
+    public AllItemsPage login() {
         tapElement(standardUserText);
         tapElement(loginButton);
         return new AllItemsPage(androidDriver);
